@@ -347,13 +347,18 @@ export default function ResultPanel({ npValues, epValues, baseMonth, departureMo
       </div>
 
       {/* Disclaimer */}
-      <div className="text-xs text-gray-400 dark:text-gray-500 border-t border-gray-100 dark:border-gray-700 pt-4 space-y-1">
+      <div className="text-xs text-gray-400 dark:text-gray-500 border-t border-gray-100 dark:border-gray-700 pt-4 space-y-1.5">
+        <p className="font-medium text-gray-500 dark:text-gray-400">{T('result.abbrev')}</p>
         <p>{T('result.disclaimer1')}</p>
         <p>{T('result.disclaimer2')}</p>
         <p>
           {T('result.disclaimerSource')}{' '}
           <a href={T('result.officialPDFUrl')} target="_blank" rel="noreferrer" className="underline text-blue-400 dark:text-blue-400">
             {T('result.officialPDF')}
+          </a>
+          {' · '}
+          <a href={T('result.npSourceUrl')} target="_blank" rel="noreferrer" className="underline text-blue-400 dark:text-blue-400">
+            {T('result.npSourceLabel')}
           </a>
         </p>
       </div>
