@@ -5,6 +5,7 @@ const EP_ROWS = [
   { jpLabel: '厚生年金資格月数情報',     sample: '36',             mappingKey: 'm_epMonths', color: 'green' },
   { jpLabel: '厚生年金加入月数情報',     sample: '48',             mappingKey: null,         color: 'gray' },
   { jpLabel: '厚生年金納付月数情報',     sample: '48',             mappingKey: null,         color: 'gray' },
+  { jpLabel: '共済組合等納付月数情報',   sample: '0',              mappingKey: 'm_kyosai',   color: 'green' },
 ];
 
 const NP_ROWS = [
@@ -142,6 +143,9 @@ export default function MynaGuide({ open, setOpen }) {
                   <PortalRow key={jpLabel} jpLabel={jpLabel} sample={sample} mappingKey={mappingKey} color={color} T={T} />
                 ))}
               </div>
+              <p className="mt-2 text-xs text-indigo-700 dark:text-indigo-300 bg-indigo-50 dark:bg-indigo-900/30 border border-indigo-200 dark:border-indigo-700 rounded-lg px-3 py-2">
+                {T('guide.kyosaiNote')}
+              </p>
             </div>
 
             <div>

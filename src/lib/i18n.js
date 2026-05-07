@@ -159,6 +159,9 @@ export const translations = {
       npSection: "Contribution period records",
       m_epDate: "→ Arrival month (Step 1)",
       m_epMonths: "→ EP months enrolled (Step 3)",
+      m_kyosai: "→ EP months if civil servant (Step 3)",
+      kyosaiNote:
+        "Civil servants (公務員): If 厚生年金資格月数情報 shows 0, look at 共済組合等納付月数情報 instead — enter that value as your EP months in Step 3. Since October 2015, 共済年金 (mutual aid pension) was merged into 厚生年金 and is recorded here. Example: enrolled Apr 2023, 共済組合等 = 36 → enter 36 as EP months in Step 3.",
       m_npPaid: "→ Fully paid (Step 2)",
       m_npFullExempt: "→ Full exemption (Step 2)",
       m_np34Exempt: "→ ¾ exemption (Step 2)",
@@ -340,6 +343,9 @@ export const translations = {
       npSection: "年金加入期間・納付等月数記録情報",
       m_epDate: "→ 来日月（ステップ1）",
       m_epMonths: "→ 厚生年金月数（ステップ3）",
+      m_kyosai: "→ 厚生年金月数・公務員の場合（ステップ3）",
+      kyosaiNote:
+        "公務員の方：厚生年金資格月数情報が0の場合は、共済組合等納付月数情報の値をステップ3の厚生年金月数に入力してください。2015年10月以降、共済年金は厚生年金に統合され、この欄に記録されます。例：2023年4月加入・共済組合等 = 36ヶ月 → ステップ3に36を入力。",
       m_npPaid: "→ 保険料納付済（ステップ2）",
       m_npFullExempt: "→ 全額免除（ステップ2）",
       m_np34Exempt: "→ ¾免除（ステップ2）",
@@ -524,6 +530,9 @@ export const translations = {
       npSection: "Catatan periode kontribusi",
       m_epDate: "→ Bulan kedatangan (Langkah 1)",
       m_epMonths: "→ Bulan EP (Langkah 3)",
+      m_kyosai: "→ Bulan EP jika PNS (Langkah 3)",
+      kyosaiNote:
+        "Pegawai negeri (公務員): Jika 厚生年金資格月数情報 menunjukkan 0, lihat 共済組合等納付月数情報 — masukkan nilai tersebut sebagai bulan EP di Langkah 3. Sejak Oktober 2015, 共済年金 digabung ke dalam 厚生年金 dan dicatat di kolom ini. Contoh: terdaftar April 2023, 共済組合等 = 36 → masukkan 36 sebagai bulan EP di Langkah 3.",
       m_npPaid: "→ Dibayar penuh (Langkah 2)",
       m_npFullExempt: "→ Bebas penuh (Langkah 2)",
       m_np34Exempt: "→ Bebas ¾ (Langkah 2)",
