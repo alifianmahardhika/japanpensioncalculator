@@ -1,16 +1,42 @@
-# React + Vite
+# Japan Pension Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An unofficial estimation tool for foreigners departing Japan who want to understand their pension options — lump-sum withdrawal (脱退一時金) and old-age pension (老齢年金).
 
-Currently, two official plugins are available:
+Built by [eftax.co.jp](https://eftax.co.jp).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- **Lump-sum withdrawal estimate** — National Pension (NP) and Employees' Pension (EP) amounts with withholding tax breakdown
+- **Old-age pension estimate** — monthly and annual figures from age 65 (Basic + Earnings-related)
+- **MynaPortal verification guide** — maps 年金資格記録情報 fields directly to calculator inputs, with a grand-total cross-check
+- **Multilingual** — English, 日本語, Bahasa Indonesia
+- **Dark mode**
+- **Projection mode** — enter your current portal total while modelling future contribution months
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Official Brochures
 
-## Expanding the ESLint configuration
+| Language | Link |
+|---|---|
+| English | [Lump-sum Withdrawal Payment (EN)](https://www.nenkin.go.jp/international/english/japanese-system/benefit/payment.files/A.pdf) |
+| 日本語 | [脱退一時金 (JA)](https://www.nenkin.go.jp/international/japanese-system/withdrawalpayment/payment.files/A.pdf) |
+| Bahasa Indonesia | [Lump-sum Withdrawal Payment (ID)](https://www.nenkin.go.jp/international/english/japanese-system/benefit/payment.files/F.pdf) |
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Source: Japan Pension Service (March 2026).
+
+## Tech Stack
+
+- [Vite](https://vitejs.dev/) + [React](https://react.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Bun](https://bun.sh/) (package manager & dev server)
+- Deployed on [Netlify](https://netlify.com/)
+
+## Getting Started
+
+```bash
+bun install
+bun run dev
+```
+
+## Disclaimer
+
+This is an unofficial estimation tool. Actual amounts are determined by the Japan Pension Service. Always verify at [nenkin.go.jp](https://www.nenkin.go.jp).

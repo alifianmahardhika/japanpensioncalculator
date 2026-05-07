@@ -72,6 +72,7 @@ export const translations = {
       disclaimer2: 'If your home country has a Social Security Agreement with Japan (Germany, USA, Belgium, France, Canada, Australia, Netherlands, Czech, Spain, Ireland, Brazil, Switzerland, Hungary, India, Luxembourg, Philippines, Slovakia, Finland, Sweden, Austria), claiming the lump-sum forfeits totalization rights — consult your pension office first.',
       disclaimerSource: 'Source: Japan Pension Service — Lump-sum Withdrawal guide (March 2026).',
       officialPDF: 'Official PDF',
+      officialPDFUrl: 'https://www.nenkin.go.jp/international/english/japanese-system/benefit/payment.files/A.pdf',
     },
     npBox: {
       title: 'National Pension (国民年金) — Lump-sum Withdrawal',
@@ -229,6 +230,7 @@ export const translations = {
       disclaimer2: '日本と社会保障協定を締結している国（ドイツ、アメリカ、ベルギー、フランス、カナダ、オーストラリア、オランダ、チェコ、スペイン、アイルランド、ブラジル、スイス、ハンガリー、インド、ルクセンブルク、フィリピン、スロバキア、フィンランド、スウェーデン、オーストリア）から来日されている場合、脱退一時金を受け取ると通算権利が失われます。事前に年金事務所にご相談ください。',
       disclaimerSource: '出典：日本年金機構 脱退一時金のご案内（2026年3月）。',
       officialPDF: '公式PDF',
+      officialPDFUrl: 'https://www.nenkin.go.jp/international/japanese-system/withdrawalpayment/payment.files/A.pdf',
     },
     npBox: {
       title: '国民年金 — 脱退一時金',
@@ -386,6 +388,7 @@ export const translations = {
       disclaimer2: 'Jika negara asal Anda memiliki Perjanjian Keamanan Sosial dengan Jepang (Jerman, AS, Belgia, Prancis, Kanada, Australia, Belanda, Ceko, Spanyol, Irlandia, Brasil, Swiss, Hongaria, India, Luksemburg, Filipina, Slowakia, Finlandia, Swedia, Austria), mengklaim pembayaran sekaligus menghilangkan hak totalisasi.',
       disclaimerSource: 'Sumber: Japan Pension Service — Panduan Pembayaran Sekaligus (Maret 2026).',
       officialPDF: 'PDF Resmi',
+      officialPDFUrl: 'https://www.nenkin.go.jp/international/english/japanese-system/benefit/payment.files/F.pdf',
     },
     npBox: {
       title: 'Pensiun Nasional (国民年金) — Pembayaran Sekaligus',

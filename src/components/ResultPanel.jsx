@@ -352,7 +352,7 @@ export default function ResultPanel({ npValues, epValues, baseMonth, departureMo
         <p>{T('result.disclaimer2')}</p>
         <p>
           {T('result.disclaimerSource')}{' '}
-          <a href="https://www.nenkin.go.jp/international/english/japanese-system/benefit/payment.files/A.pdf" target="_blank" rel="noreferrer" className="underline text-blue-400 dark:text-blue-400">
+          <a href={T('result.officialPDFUrl')} target="_blank" rel="noreferrer" className="underline text-blue-400 dark:text-blue-400">
             {T('result.officialPDF')}
           </a>
         </p>
