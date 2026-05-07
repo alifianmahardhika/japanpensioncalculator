@@ -13,6 +13,8 @@ export const translations = {
       baseMonthHint: "Usually the month before departure",
       totalPeriod: "Total period",
       months: "months",
+      yearPlaceholder: "Year",
+      monthPlaceholder: "Month",
     },
     step2: {
       title: "Step 2 — National Pension Month Breakdown",
@@ -199,6 +201,8 @@ export const translations = {
       baseMonthHint: "通常、出国予定月の前月",
       totalPeriod: "合計期間",
       months: "ヶ月",
+      yearPlaceholder: "年",
+      monthPlaceholder: "月",
     },
     step2: {
       title: "ステップ2 — 国民年金の月数内訳",
@@ -384,6 +388,8 @@ export const translations = {
       baseMonthHint: "Biasanya bulan sebelum keberangkatan",
       totalPeriod: "Total periode",
       months: "bulan",
+      yearPlaceholder: "Tahun",
+      monthPlaceholder: "Bulan",
     },
     step2: {
       title: "Langkah 2 — Rincian Bulan Pensiun Nasional",
