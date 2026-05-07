@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { monthsBetween } from '../lib/pension.js';
 import { useApp } from '../contexts/AppContext.jsx';
 
@@ -14,11 +15,27 @@ const SELECT_CLASS =
 function MonthSelect({ value, onChange }) {
   const { lang, T } = useApp();
 
-  const year  = value ? value.slice(0, 4) : '';
-  const month = value ? value.slice(5, 7) : '';
+  const [year,  setYear]  = useState(value ? value.slice(0, 4) : '');
+  const [month, setMonth] = useState(value ? value.slice(5, 7) : '');
 
-  function emit(y, m) {
-    onChange(y && m ? `${y}-${m}` : '');
+  // Sync when parent resets value externally
+  useEffect(() => {
+    setYear (value ? value.slice(0, 4) : '');
+    setMonth(value ? value.slice(5, 7) : '');
+  }, [value]);
+
+  function handleYear(e) {
+    const y = e.target.value;
+    setYear(y);
+    if (y && month) onChange(`${y}-${month}`);
+    else onChange('');
+  }
+
+  function handleMonth(e) {
+    const m = e.target.value;
+    setMonth(m);
+    if (year && m) onChange(`${year}-${m}`);
+    else onChange('');
   }
 
   const monthLabel = (index) =>
@@ -26,19 +43,11 @@ function MonthSelect({ value, onChange }) {
 
   return (
     <div className="flex gap-2">
-      <select
-        value={year}
-        onChange={e => emit(e.target.value, month)}
-        className={SELECT_CLASS}
-      >
+      <select value={year} onChange={handleYear} className={SELECT_CLASS}>
         <option value="">{T('step1.yearPlaceholder')}</option>
         {YEARS.map(y => <option key={y} value={String(y)}>{y}</option>)}
       </select>
-      <select
-        value={month}
-        onChange={e => emit(year, e.target.value)}
-        className={SELECT_CLASS}
-      >
+      <select value={month} onChange={handleMonth} className={SELECT_CLASS}>
         <option value="">{T('step1.monthPlaceholder')}</option>
         {MONTHS.map(({ value: v, index }) => (
           <option key={v} value={v}>{monthLabel(index)}</option>
